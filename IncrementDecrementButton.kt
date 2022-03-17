@@ -8,13 +8,13 @@ import android.widget.TextView
 
 class IncrementDecrementButton : LinearLayout {
     constructor(context: Context) : super(context)
-    constructor(context: Context, attrs: AttributeSet) : super(context, attrs)
+    constructor(context: Context, attributes: AttributeSet) : super(context, attributes)
 
     constructor(
         context: Context,
-        attrs: AttributeSet?,
+        attributes: AttributeSet,
         defStyle: Int
-    ) : super(context, attrs, defStyle)
+    ) : super(context, attributes, defStyle)
 
     var value = 1
 

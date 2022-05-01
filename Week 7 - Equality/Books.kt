@@ -1,10 +1,10 @@
 import java.util.*
 
-class Book(val bookId: Int, val bookName: String, val totalQuantity: Int){
+class Books(val bookId: Int, val bookName: String, val totalQuantity: Int){
 
     override fun equals(obj: Any?): Boolean {
         if (this === obj) return true
-        if (obj !is Book) return false
+        if (obj !is Books) return false
         val book = obj
         return book.bookId == this.bookId && book.bookName == this.bookName && book.totalQuantity == this.totalQuantity
     }
@@ -15,9 +15,9 @@ class Book(val bookId: Int, val bookName: String, val totalQuantity: Int){
 
 fun main(){
 
-    val book1 = Book(1,"You",5)
-    val book2 = Book(1,"You",5)
-    val book3 = Book(2,"The secret",6)
+    val book1 = Books(1,"You",5)
+    val book2 = Books(1,"You",5)
+    val book3 = Books(2,"The secret",6)
 
     // ==( Structural equality ) internally calls equals method
     println(book1 == book2) // true

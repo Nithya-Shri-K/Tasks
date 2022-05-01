@@ -1,5 +1,6 @@
 import java.util.*
 
+
 // Compiler automatically creates the equals, hashCode, toString, and copy functions
 data class Book(val bookId: Int, val bookName: String, val totalQuantity: Int)
 

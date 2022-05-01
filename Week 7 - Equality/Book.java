@@ -1,5 +1,5 @@
 import java.util.Objects;
-public class Books {
+public class Book {
     private int bookId;
     private String bookName;
     private int quantityTotal;
@@ -16,9 +16,9 @@ public class Books {
     {
         if(this == obj)
             return true;
-        if(!(obj instanceof Books))
+        if(!(obj instanceof Book))
             return false;
-        Books book = (Books) obj;
+        Book book = (Book) obj;
         return (
                 book.bookId == this.bookId && book.bookName.equals(this.bookName)  &&
                 book.quantityTotal == this.quantityTotal
@@ -36,10 +36,10 @@ public class Books {
 class Main {
 
     public static void main(String[] args) {
-        Books book1 = new Books(1,"The Secret",5);
-        Books book2 = new Books(1,"The Secret",5);
-        Books book3 = new Books(2,"You",6);
-        Books book4 = book1;
+        Book book1 = new Book(1,"The Secret",5);
+        Book book2 = new Book(1,"The Secret",5);
+        Book book3 = new Book(2,"You",6);
+        Book book4 = book1;
         // both values are primitive so the values are compared.
         System.out.println(book1.getBookId() == book2.getBookId()); // true
         // both are objects, so the reference of the objects are compared
